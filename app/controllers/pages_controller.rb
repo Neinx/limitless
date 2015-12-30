@@ -3,7 +3,6 @@ class PagesController < ApplicationController
   end
 
   def home
-  	@subscriber = Subscriber.new
   end
 
   def about
