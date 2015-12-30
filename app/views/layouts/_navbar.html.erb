@@ -1,0 +1,138 @@
+
+
+    <!-- STATIC TOPBAR
+    ============================== -->
+    <div class="topbar hidden-xs hidden-sm">
+      <div class="container">
+        <!-- Social links -->
+        <ul class="topbar-nav topbar-nav_left">
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="#"><i class="fa fa-vk"></i></a></li>
+          <li><a href="#"><i class="fa fa-stumbleupon"></i></a></li>
+        </ul>
+        <ul class="topbar-nav topbar-nav_right">
+
+          <!-- Account links -->
+
+          <% if user_signed_in? %>
+          <li><%= link_to "Profile", edit_user_registration_path %></li>
+            <li><%= link_to "Log out", destroy_user_session_path, :method => :delete %> </li>
+            <% else %>
+          <li><%= link_to "Sign-in", new_user_session_path %></li>
+          <li><%= link_to "Sign Up", new_user_registration_path %></li>
+          <% end %>
+        </ul>
+      </div> <!-- / .container -->
+    </div> <!-- / .topbar -->
+    <div class="navbar__hr hidden-xs hidden-sm"></div>
+
+
+    <!-- STATIC NAVBAR
+    ============================== -->
+    <div class="navbar navbar-default navbar-static-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <!-- Toggle button -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- Brand name -->
+          <%= link_to image_tag("thelogoo.png"), root_path, class:"navbar-brand" %>
+        </div>
+        <div class="collapse navbar-collapse">
+          <!-- Navbar links -->
+          <ul class="nav navbar-nav navbar-right">
+
+            <!-- Home -->
+            <li class="dropdown">
+             <%= link_to 'Home', root_path %>
+
+            </li>
+
+
+            <!-- Portfolio -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                About <span class="fa fa-angle-down"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu">
+                <li><%= link_to 'About', about_path %></li>
+                <li><a href="portfolio-item.html">Portfolio</a></li>
+              </ul>
+            </li>
+
+                        <!-- Portfolio -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                videos <span class="fa fa-angle-down"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu">
+                <li><%= link_to 'Videos', videos_path %></li>
+              </ul>
+            </li>
+            <!-- Blog -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                Articles <span class="fa fa-angle-down"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu">
+                <li><%= link_to 'Articles', blog_path %></li>
+                <li><%= link_to 'Blog', blog_path %></li>
+                <li><%= link_to 'Posts', posts_path %></li>
+              </ul>
+            </li>
+
+            <!-- Shop -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                Products <span class="fa fa-angle-down"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu">
+                <li><%= link_to 'Products', products_path %></li>
+                <li><a href="shop-item.html">Shop Item</a></li>
+                <li><a href="shopping-cart.html">Shopping Cart</a></li>
+              </ul>
+
+
+
+
+            <!-- Profile -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                Profile <span class="fa fa-angle-down"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu">
+                <li class="dropdown-submenu">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sign In</a>
+                  <!-- Dropdown submenu -->
+                  <ul class="dropdown-menu">
+                    <li><a href="sign-in.html">Sign In: Default</a></li>
+                    <li><a href="sign-in_option-1.html">Sign In: Option 1</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sign Up</a>
+                  <!-- Dropdown submenu -->
+                  <ul class="dropdown-menu">
+                    <li><a href="sign-up.html">Sign Up: Default</a></li>
+                    <li><a href="sign-up_option-1.html">Sign Up: Option 1</a></li>
+                  </ul>
+                </li>
+                <li><a href="profile.html">User Profile</a></li>
+              </ul>
+            </li>
+
+
+            
+            </li>
+
+
+        </div> <!-- / .navbar-collapse -->
+      </div> <!-- / .container -->
+    </div> <!-- / .navbar -->
+

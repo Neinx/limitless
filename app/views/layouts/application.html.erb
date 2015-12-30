@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Limitless-Pickup</title>
+  <%= stylesheet_link_tag "application", media: "all" %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+
+   <body class="body_index">
+   		
+
+		<%= render "layouts/navbar" %>
+       <p class="notice"><%= notice %></p>
+       <p class="alert"><%= alert %></p>
+		<%= yield %>
+
+		<%= render "layouts/footer" %>
+
+	</body>
+</html>
