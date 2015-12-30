@@ -284,7 +284,10 @@ body {
   font-size: 13px;
   line-height: 1.42857143;
   color: #333333;
-  background-color: #ffffff;
+    background-image: url("http://i67.tinypic.com/15of9ew.jpg");
+  background: url('http://i67.tinypic.com/15of9ew.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 input,
 button,
@@ -2711,6 +2714,7 @@ tbody.collapse.in {
 }
 .dropup .caret,
 .navbar-fixed-bottom .dropdown .caret {
+
   border-top: 0;
   border-bottom: 4px solid;
   content: "";
@@ -3248,6 +3252,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-top-left-radius: 0;
 }
 .navbar {
+    background-image: url("https://www.colourbox.com/preview/3457246-flying-black-glossy-rectangle-view-of-the-top-background.jpg");
+  background: url('https://www.colourbox.com/preview/3457246-flying-black-glossy-rectangle-view-of-the-top-background.jpg');
   position: relative;
   min-height: 70px;
   margin-bottom: 18px;
@@ -6595,9 +6601,10 @@ a.list-group-item .list-group-item-text {
  * Topbar
  */
 .topbar {
+
   position: relative;
   height: 40px;
-  background: #333333;
+  background-color: #000000;
 }
 .topbar:after:before,
 .topbar:after:after {
